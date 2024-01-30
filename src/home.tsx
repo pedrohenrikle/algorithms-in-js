@@ -22,6 +22,11 @@ export function Home() {
         })}
       </div>
       
+
+      <div className="flex items-center flex-col mt-12 gap-5">
+        <Separator />
+        <p className="text-secondary-foreground leading-relaxed text-sm">Made with 💜 by Pedro Henrique Klein</p>
+      </div>
     </div>
   )
 }
