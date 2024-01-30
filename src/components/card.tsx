@@ -15,7 +15,7 @@ export function Card(algorithm: AlgorithmDataProps) {
       ref={ref}
       className={`transition-transform transform ${
         inView ? 'translate-y-0 opacity-100' : 'translate-y-52 opacity-0'
-      } duration-1000 ease-in-out`}
+      } duration-700 ease-in-out`}
     >
       <article className="bg-secondary p-6 rounded-lg flex gap-8 opacity-95">
         <a href={algorithm.codeUrl} target="_blank" className="max-w-96 aspect-square flex">
