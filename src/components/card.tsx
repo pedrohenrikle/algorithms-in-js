@@ -14,7 +14,7 @@ export function Card(algorithm: AlgorithmDataProps) {
       key={algorithm.title}
       ref={ref}
       className={`transition-transform transform ${
-        inView ? 'translate-x-0 opacity-100' : 'translate-x-72 opacity-0'
+        inView ? 'translate-y-0 opacity-100' : 'translate-y-52 opacity-0'
       } duration-1000 ease-in-out`}
     >
       <article className="bg-secondary p-6 rounded-lg flex gap-8 opacity-95">
@@ -28,7 +28,7 @@ export function Card(algorithm: AlgorithmDataProps) {
 
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
-            <h1 className="text-4xl font-bold">{algorithm.title}</h1>
+            <h1 className="text-4xl font-bold leading-relaxed">{algorithm.title}</h1>
             <span className="gap-4 flex">
               {algorithm.badges.map((item) => {
                 return <Badge key={item}>{item}</Badge>
@@ -36,7 +36,7 @@ export function Card(algorithm: AlgorithmDataProps) {
             </span>
           </div>
           {algorithm.description.split('\n').map((paragraph, index) => (
-            <p className="leading-7 text-justify font-sans" style={{textIndent: index == 0 ? '3rem' : '0' }} key={index}>{paragraph}</p>
+            <p className="leading-relaxed text-justify font-sans" style={{textIndent: index == 0 ? '3rem' : '0' }} key={index}>{paragraph}</p>
           ))}
         </div>
       </article>

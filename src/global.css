@@ -66,3 +66,17 @@ html {
   font-family: 'Inter';
   -webkit-font-smoothing: antialiased;
 }
+
+/* Estilos para a barra de rolagem no WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 0.5rem; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--primary)); /* Cor da "thumb" (barra de rolagem propriamente dita) */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: hsl(var(--secondary)); /* Cor da "track" (fundo da barra de rolagem) */
+}
