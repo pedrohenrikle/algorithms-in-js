@@ -40,10 +40,17 @@ export function Hero() {
           <div className={`text-justify flex flex-col gap-2 transition-transform transform 
             ${ inView ? 'translate-y-0 opacity-100' : 'translate-y-52 opacity-0'} duration-1000 ease-in-out`}>
             <h1 className='text-2xl font-semibold'>O início de tudo</h1>
-            <p className='leading-relaxed'>Nesse artigo, vou desmistificar os mais famosos algorítimos de busca e ordenação, porém, em JavaScript! A ideia da construção da plataforma foi por uma falta de conteúdo na linguagem. A maioria dos conteúdos eram voltados pra soluções em Python, Java, C, C++, entre outros.</p>
+            <p className='leading-relaxed'>Nesse artigo, vou explicar algorítimos de busca e ordenação em JavaScript. A motivação por trás da criação do site surgiu da vontade de auxiliar a comunidade dev, motivada pela carência de conteúdo disponível na linguagem. A maioria dos conteúdos eram voltados pra soluções em Python, Java, C, C++, entre outros.</p>
             <br/>
             <h1 className='text-2xl font-semibold'><i>Big-O Notation</i></h1>
-            <p className='leading-relaxed'>Dentro dos <i>cards</i> dos algorítmos, existem <i>tags</i>, sendo uma delas no formato semelhante a: <b>O(log n)</b>. Isso é uma expressão matemática usada pra determinar os limites e a complexidade de tempo e espaço do nosso código em função de variáveis. A tabela ao lado mostra as variações das notações de complexidade, desde ineficientes até eficientes.</p>
+            <p className='leading-relaxed'>
+            Em resumo, o Big O mede a eficiência de um algoritmo com base nas diferentes quantidades de dados de entrada.
+
+            Ele ajuda a prever o tempo que o algoritmo levará no <b>PIOR</b> cenário, com base nos dados recebidos.
+
+            Queremos entender como o código se comporta com mais dados. Ficará rápido, lento ou significativamente mais demorado? Vamos explorar isso abaixo. 
+            <span className='opacity-60 m-2'>(Gráfico ao lado para representação visual)</span>
+            </p>
           </div>
         </div>
 
