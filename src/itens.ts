@@ -1,6 +1,7 @@
 import binarySearchImg from '../algorithms/binary-search/binary-search.png'
 import radixSortImg from '../algorithms/radix-sort/radix-sort.png'
 import bubbleSortImg from '../algorithms/bubble-sort/bubble-sort.png'
+import QuicksortImg from '../algorithms/quicksort/quicksort.png'
 
 export interface AlgorithmDataProps {
   title: string;
@@ -30,6 +31,13 @@ export const algorithmData = {
       urlImage: binarySearchImg,
       badges: ["Busca", "O(log n)", "Excelente"],
       codeUrl: "https://gist.github.com/pedrohenrikle/0503cc7b3218cfac04d21896778b46f0"
+    },
+    {
+      title: "Quicksort",
+      description: 'O Quicksort é um algoritmo de ordenação satisfatório baseado na estratégia "dividir para conquistar". Apesar de sua eficiência média ser considerada boa, ele é instável, o que significa que a ordem relativa de elementos idênticos pode variar após a ordenação. Essa propriedade pode ser relevante em contextos que demandam a preservação específica da ordem entre elementos iguais. Considerando o BigO (pior caso), acaba sendo ineficiente porém, seu desempenho é, em média, satisfatório.',
+      urlImage: QuicksortImg,
+      badges: ["Ordenação", "O(n^2)", "Ineficiente", "Não-Estável"],
+      codeUrl: "https://gist.github.com/pedrohenrikle/4b11e9201001b499ccaf2408b4b24f90"
     },
     {
       title: "Bubble Sort",

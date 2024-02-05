@@ -44,7 +44,7 @@ export function Hero() {
             <br/>
             <h1 className='text-2xl font-semibold'><i>Big-O Notation</i></h1>
             <p className='leading-relaxed'>
-            Em resumo, o Big O mede a eficiência de um algoritmo com base nas diferentes quantidades de dados de entrada.
+            Em resumo, o Big-O mede a eficiência de um algoritmo com base nas diferentes quantidades de dados de entrada.
 
             Ele ajuda a prever o tempo que o algoritmo levará no <b>PIOR</b> cenário, com base nos dados recebidos.
 
