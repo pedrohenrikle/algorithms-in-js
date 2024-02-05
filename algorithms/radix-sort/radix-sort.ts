@@ -1,6 +1,6 @@
-console.time('Binary Search')
+console.time('Radix Sort')
 
-import fs = require('fs')
+import fs from 'fs'
 
 function getDigit(num: number, place: number) {
   // Divide o valor por 10^x, onde x é a casa que deseja (unidade, dezena, centena)
@@ -70,4 +70,4 @@ function RadixSort(array: number[]) {
 }
 
 RadixSort([9, 2, 5, 6, 2, 645, 8, 845, 2, 47, 584, 24, 3, 4, 843, 75, 74, 6, 456, 45, 456, 37])
-console.timeEnd('Binary Search')
+console.timeEnd('Radix Sort')

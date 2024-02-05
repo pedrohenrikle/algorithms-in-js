@@ -1,6 +1,6 @@
-console.time('Binary Search')
+console.time('Bubble Sort')
 
-import fs = require('fs')
+import fs from 'fs'
 
 function BubbleSort(array: number[]) {
   let swapped 
@@ -40,4 +40,4 @@ function BubbleSort(array: number[]) {
 
 BubbleSort([12 ,251 ,15 ,15 ,5 ,125 ,16 ,16 ,31 ,2 ,23 ,73,47 ,3 ,75 ,4 ,3 ,1,])
 
-console.timeEnd('Binary Search')
+console.timeEnd('Bubble Sort')
